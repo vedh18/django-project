@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+<div>
+    <!-- This calles the url again but this time with a post request which then executes the if block of the code -->
+    <form method = "POST", action = >
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type = "submit" value = "Submit">
+    </form>
+</div>
+{% endblock %}
